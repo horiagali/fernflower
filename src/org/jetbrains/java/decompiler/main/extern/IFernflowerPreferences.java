@@ -36,6 +36,7 @@ public interface IFernflowerPreferences {
   String VERIFY_ANONYMOUS_CLASSES = "vac";
   String CONVERT_RECORD_PATTERN = "crp";
   String CONVERT_PATTERN_SWITCH = "cps";
+  String EXCLUDE_RECORD_METHODS = "erm";
 
   String LOG_LEVEL = "log";
   String MAX_PROCESSING_METHOD = "mpm";
@@ -93,6 +94,8 @@ public interface IFernflowerPreferences {
     defaults.put(BANNER, "");
     defaults.put(UNIT_TEST_MODE, "0");
     defaults.put(DUMP_ORIGINAL_LINES, "0");
+
+    defaults.put(EXCLUDE_RECORD_METHODS, "1");
 
     return Collections.unmodifiableMap(defaults);
   }
