@@ -53,9 +53,11 @@ public class TestComplexInstanceOfRecordPatternJavac {
       System.out.println("1");// 50
    }
 
-   static record R(Object o) {}
+   static record R(Object o) {
+   }
 
-   static record R2(Object o1, Object o2) {}
+   static record R2(Object o1, Object o2) {
+   }
 }
 
 class 'pkg/TestComplexInstanceOfRecordPatternJavac' {
@@ -132,36 +134,6 @@ class 'pkg/TestComplexInstanceOfRecordPatternJavac' {
       ba      52
       bc      52
       bf      53
-   }
-}
-
-class 'pkg/TestComplexInstanceOfRecordPatternJavac$R' {
-   method '<init> (Ljava/lang/Object;)V' {
-      6      57
-      9      58
-   }
-
-   method 'o ()Ljava/lang/Object;' {
-      1      61
-      4      61
-   }
-}
-
-class 'pkg/TestComplexInstanceOfRecordPatternJavac$R2' {
-   method '<init> (Ljava/lang/Object;Ljava/lang/Object;)V' {
-      6      67
-      b      68
-      e      69
-   }
-
-   method 'o1 ()Ljava/lang/Object;' {
-      1      72
-      4      72
-   }
-
-   method 'o2 ()Ljava/lang/Object;' {
-      1      76
-      4      76
    }
 }
 

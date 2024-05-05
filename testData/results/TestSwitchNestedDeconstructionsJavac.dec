@@ -201,9 +201,11 @@ public class TestSwitchNestedDeconstructionsJavac {
 
    }
 
-   static record R2(Object o, Object o2) {}
+   static record R2(Object o, Object o2) {
+   }
 
-   static record R1(Object o) {}
+   static record R1(Object o) {
+   }
 }
 
 class 'pkg/TestSwitchNestedDeconstructionsJavac' {

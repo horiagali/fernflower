@@ -1,3 +1,5 @@
 package records;
 
-public record TestRecordAnno(@RC @TA int x, int y) {}
+public record TestRecordAnno(@RC @TA int x, int y) {
+}
+

@@ -78,7 +78,8 @@ public class TestSwitchWithDeconstructionsWithoutNestedJavac {
       System.out.println("1");// 71
    }
 
-   static record R1(Object o, Object o2) {}
+   static record R1(Object o, Object o2) {
+   }
 }
 
 class 'pkg/TestSwitchWithDeconstructionsWithoutNestedJavac' {
